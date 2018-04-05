@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mushroom", "Mushroom\Mushroom.csproj", "{FCC81AAC-26A2-4909-B641-8851E792800E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Updater", "Updater\Updater.csproj", "{1D6CDC05-4C77-44E3-BCEC-91333C20E9FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoUpdate", "AutoUpdate\AutoUpdate.csproj", "{42296F90-9F98-485D-873D-6F5A1764D8F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{FCC81AAC-26A2-4909-B641-8851E792800E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCC81AAC-26A2-4909-B641-8851E792800E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCC81AAC-26A2-4909-B641-8851E792800E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D6CDC05-4C77-44E3-BCEC-91333C20E9FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D6CDC05-4C77-44E3-BCEC-91333C20E9FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D6CDC05-4C77-44E3-BCEC-91333C20E9FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D6CDC05-4C77-44E3-BCEC-91333C20E9FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42296F90-9F98-485D-873D-6F5A1764D8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42296F90-9F98-485D-873D-6F5A1764D8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42296F90-9F98-485D-873D-6F5A1764D8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42296F90-9F98-485D-873D-6F5A1764D8F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
