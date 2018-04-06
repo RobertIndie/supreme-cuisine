@@ -1,11 +1,41 @@
 ﻿using System;
 using System.IO;
 using System.Net;
+using System.Text;
 
 namespace AutoUpdate
 {
     internal class Connection
     {
+        public string GetContent(string url)
+        {
+            try
+            {
+                HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
+                //发送请求并获取相应回应数据
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                //直到request.GetResponse()程序才开始向目标网页发送Post请求
+                Stream responseStream = response.GetResponseStream();
+                StreamReader streamReader = new StreamReader(responseStream, Encoding.UTF8);
+                char[] buffer = new char[256];
+                int byteRead = streamReader.Read(buffer, 0, 256);
+                StringBuilder sb = new StringBuilder();
+                while(byteRead != 0)
+                {
+                    string str = new string(buffer, 0, byteRead);
+                    sb.Append(str);
+                    byteRead = streamReader.Read(buffer, 0, 256);
+                }
+                streamReader.Close();
+                responseStream.Close();
+                return sb.ToString();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
         /// <summary>
         /// download use http connection
         /// </summary>
