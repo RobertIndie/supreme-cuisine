@@ -3,9 +3,9 @@ using System.IO;
 using System.Net;
 using System.Text;
 
-namespace AutoUpdate
+namespace Connection
 {
-    internal class Connection
+    internal class HttpConnection
     {
         public string GetContent(string url)
         {
