@@ -7,7 +7,7 @@ namespace Connection
 {
     public class HttpConnection
     {
-        public string GetContent(string url)
+        public static string GetContent(string url)
         {
             try
             {
@@ -42,7 +42,7 @@ namespace Connection
         /// <param name="url">file url</param>
         /// <param name="path">file path,contain file name</param>
         /// <returns></returns>
-        public bool HttpDownload(string url, string path)
+        public static bool HttpDownload(string url, string path)
         {
             string tempPath = System.IO.Path.GetDirectoryName(path) + @"\temp";
             System.IO.Directory.CreateDirectory(tempPath);  //创建临时文件目录
