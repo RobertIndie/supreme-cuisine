@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Connection
 {
-    internal class HttpConnection
+    public class HttpConnection
     {
         public string GetContent(string url)
         {
