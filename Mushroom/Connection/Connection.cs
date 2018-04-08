@@ -3,7 +3,7 @@ using System.IO;
 using System.Net;
 using System.Text;
 
-namespace Connection
+namespace AutoUpdate
 {
     public class HttpConnection
     {

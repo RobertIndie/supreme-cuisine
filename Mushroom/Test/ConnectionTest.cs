@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Connection;
+using AutoUpdate;
 using System.IO;
 
 namespace Test
@@ -23,9 +23,10 @@ namespace Test
     public class AutoUpdateTest
     {
         [TestMethod]
-        public void VersionTest()
+        public void AutoUpdateSettingsTest()
         {
-            Assert.AreEqual(true, Updater.CheckVersion("http://learntop.tech:5000/test/Version.json", "1.0.0"), "Version verificate failed.");
+            RemoteMessage remoteMessage = Updater.GetMessage("http://learntop.tech:5000/test/message.json");
+            Assert.AreEqual(true, remoteMessage.CheckVersion("1.0.0"), "Version verificate failed.");
         }
     }
 }
