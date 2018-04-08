@@ -25,7 +25,7 @@ namespace Test
         [TestMethod]
         public void VersionTest()
         {
-            Assert.AreEqual<bool>(true, Updater.CheckVersion("http://learntop.tech:5000/test/Version.json", "1.0.0"), "Version verificate failed.");
+            Assert.AreEqual(true, Updater.CheckVersion("http://learntop.tech:5000/test/Version.json", "1.0.0"), "Version verificate failed.");
         }
     }
 }
